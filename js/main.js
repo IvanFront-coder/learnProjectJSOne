@@ -89,7 +89,6 @@ optionExpensesBtn.addEventListener('click', function() {
 });
 
 countBtn.addEventListener('click', function() {
-    // console.log(expensesValue.textContent);
     if(appData.budget != undefined && expensesValue.textContent != '') {
         let sumExpenses = +expensesValue.textContent;
         appData.moneyPerDay = ((appData.budget - sumExpenses) / 30).toFixed();
@@ -157,11 +156,6 @@ let appData = {
     income: [],
     savings: false
 };
-
-// console.log('Наша программа включает в себя данные:');
-// for (let key in appData) {
-//     console.log(key + ': ' + appData[key]);
-// }
 
 
 
